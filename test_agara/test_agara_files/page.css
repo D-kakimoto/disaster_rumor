@@ -1,0 +1,1061 @@
+@charset "utf-8";
+/* **************************************************
+
+CSS Information
+File Name : page.css
+Style Info: 各ページのスタイル指定
+Date: 2015-10-14
+Table of Contents
+	 01 - 共通設定
+	 02 - トップページ
+	 03 - 詳細ページ
+
+************************************************** */
+/* --------------------------------------------------
+	01 - 共通設定
+-------------------------------------------------- */
+/* .archiveTitle - アーカイブタイトル
+-------------------------------------------------- */
+.archiveTitle {
+	height: 100px;
+	background-color: #fff;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.archiveTitle h2 {
+	font-size: 22px;
+	font-size: 2.2rem;
+	line-height: 100px;
+}
+
+.archiveTitle h2 span {
+	padding: 3px 0 2px 56px;
+}
+
+/* 風水害 */
+.fusuigai h2 span {
+	background: url(../tmpl-img/ico_archive_title01.png) no-repeat 10px center;
+}
+
+/* 地震・津波 */
+.jishin h2 span {
+	background: url(../tmpl-img/ico_archive_title02.png) no-repeat 10px center;
+}
+
+/* 各市町村の災害情報 */
+.hazard-maps h2 span {
+	background: url(../tmpl-img/ico_archive_title03.png) no-repeat 10px center;
+}
+
+
+
+/* このサイトについて */
+.about h2 span {
+	background: url(../tmpl-img/ico_archive_title05.png) no-repeat 10px center;
+}
+
+/* サイトマップ  */
+.sitemap h2 span {
+	background: url(../tmpl-img/ico_archive_title06.png) no-repeat 10px center;
+}
+
+/* 上水道  */
+.suido h2 span {
+	background: url(../tmpl-img/ico_archive_title07.png) no-repeat 10px center;
+}
+
+/*	.sideNavi - サイドナビゲーション
+-------------------------------------------------- */
+.sideNavi header {
+	position: relative;
+	padding: 12px 8px 11px;
+	background-color: #ffc236;
+	border-radius: 5px 5px 0 0;
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.sideNavi h3 .icon {
+	position: absolute;
+	top: -6px;
+	left: 8px;
+}
+
+.sideNavi h3 .text {
+	padding-left: 42px;
+}
+
+/* 防災記事  */
+.sideNavi h3 .bousaikiji {
+	padding-left: 43px;
+}
+
+.sideNavi h4 {
+	margin: 0 10px;
+	background-color: #eee;
+	padding: 8px 15px;	
+	border-radius: 5px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.sideNavi .content {
+	padding: 4px 0;
+	background-color: #fff;
+	border: 1px solid #eee;
+}
+
+.sideNavi ul {
+	margin: 0 19px;
+}
+
+.sideNavi li {
+	margin: 18px 0;
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.3;
+	word-break:break-all !important;
+}
+
+.sideNavi li a {
+	display: inline-block;
+	padding-left: 14px;
+	background: url(../tmpl-img/ico_arrow05.png) no-repeat left center;
+	color: #14b4d2;
+}
+
+/*	.sideNaviNews - ニュース形式のサイドナビゲーション
+-------------------------------------------------- */
+.sideNaviNews {
+	margin-bottom: 30px;
+}
+
+.sideNaviNews header .more {
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	font-weight: normal;
+	font-size: 10px;
+	font-size: 1.0rem;
+}
+
+.sideNaviNews header .more a {
+	display: block;
+	padding: 4px 5px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.sideNaviNews header .more a span {
+	display: inline-block;
+	padding-left: 14px;
+	background: url(../tmpl-img/ico_arrow01.png) no-repeat left center;
+}
+
+.sideNaviNews ul {
+	margin: 0;
+}
+
+.sideNaviNews li {
+	margin: 0;
+	padding: 14px 19px;
+	border-top: 1px solid #ddd;
+}
+
+.sideNaviNews li:first-child {
+	border-top: none;
+}
+
+.sideNaviNews .date {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+.sideNaviNews .title {
+	display: block;
+	line-height: 1.5;	
+}
+
+.sideNaviNews li a {
+	display: inline-block;
+	padding-left: 0;
+	background: none;
+}
+
+/*	.sideLinks header - サイドリンク 見出し
+-------------------------------------------------- */
+.sideLinks header h3 {
+	margin-bottom: 8px;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+
+.sideLinks header h3 span {
+	padding-left: 28px;
+}
+
+/* 安否情報 */
+.sideLinks01 header h3 span {
+	background: url(../tmpl-img/ico_side_links01.png) no-repeat 5px center;
+}
+
+/* 交通情報 */
+.sideLinks02 header h3 span {
+	background: url(../tmpl-img/ico_side_links02.png) no-repeat 5px center;
+}
+
+/* 道路規制情報 */
+.sideLinks03 header h3 span {
+	background: url(../tmpl-img/ico_side_links03.png) no-repeat 5px center;
+}
+
+/* ライフライン */
+.sideLinks04 header h3 span {
+	background: url(../tmpl-img/ico_side_links04.png) no-repeat 5px center;
+}
+
+/*	.sideLinks - サイドリンク（デフォルト）
+-------------------------------------------------- */
+.sideLinks {
+	margin-bottom: 20px;
+}
+
+.sideLinks .content {
+	background-color: #fff;
+	border: 1px solid #ddd;	
+}
+
+.sideLinks .content h4 {
+	margin: 2px 2px 0;
+	padding: 10px 5px;
+	background-color: #deebf3;
+	border-bottom: 2px solid #ccc;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.sideLinks .content h4 span {
+	padding-left: 20px;
+}
+
+/* 交通情報 - 鉄道運行状況 */
+.sideLinks .content .heading01 span {
+	background: url(../tmpl-img/ico_side_links_heading01.png) no-repeat left center;
+}
+
+/* 交通情報 - 船舶情報 */
+.sideLinks .content .heading02 span {
+	background: url(../tmpl-img/ico_side_links_heading02.png) no-repeat left center;
+}
+
+/* 交通情報 - フライト情報 */
+.sideLinks .content .heading03 span {
+	background: url(../tmpl-img/ico_side_links_heading03.png) no-repeat left center;
+}
+
+/* ライフライン - 電機障害 */
+.sideLinks .content .heading04 span {
+	background: url(../tmpl-img/ico_side_links_heading04.png) no-repeat left center;
+}
+
+/* ライフライン - 電話障害 */
+.sideLinks .content .heading05 span {
+	background: url(../tmpl-img/ico_side_links_heading05.png) no-repeat left center;
+}
+
+/* ライフライン - ガス障害 */
+.sideLinks .content .heading06 span {
+	background: url(../tmpl-img/ico_side_links_heading06.png) no-repeat left center;
+}
+
+/*※写真入れ替え！ */
+/* ライフライン - 上下水道障害 */
+.sideLinks .content .heading07 span {
+	background: url(../tmpl-img/ico_side_links_heading07.png) no-repeat left center;
+}
+
+
+.sideLinks ul {
+	margin: 8px 9px;
+}
+
+.sideLinks li {
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.3;
+}
+
+.sideLinks li a {
+	display: block;
+	padding: 4px 0;
+}
+
+.sideLinks li a span {
+	display: block;
+	padding-left: 15px;
+	background: url(../tmpl-img/ico_arrow05.png) no-repeat left 3px;
+}
+
+/*	.sideLinks01 - サイドリンク（安否情報）
+-------------------------------------------------- */
+.sideLinks01 .content {
+	background-color: #fff;
+	border: 3px solid #ddd;	
+}
+
+.sideLinks01 ul {
+	margin: 0;
+}
+
+.sideLinks01 li {
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.3;
+}
+
+.sideLinks01 li a {
+	display: block;
+	padding: 16px 7px;
+	border-top: 1px dotted #ddd;
+}
+
+.sideLinks01 li:first-child a {
+	border-top: none;
+}
+
+.sideLinks01 li a span {
+	display: block;
+	padding-left: 12px;
+	background: url(../tmpl-img/ico_arrow04.png) no-repeat left 3px;
+}
+
+/*	.article - 記事ブロック
+-------------------------------------------------- */
+.article {
+	padding: 39px 39px 29px;
+	background: #fff url(../tmpl-img/bg_article_header01.png) no-repeat center top;
+	border: 1px solid #ddd;
+}
+
+/*	.articleHeader - 記事タイトル
+-------------------------------------------------- */
+.articleHeader h1 {
+	margin-bottom: 24px;
+	padding: 0 0 8px;
+	border-bottom: 4px solid #14b4d2;
+	font-size: 2.4em;
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+/*	.articleBody - 記事本文エリア
+-------------------------------------------------- */
+.articleBody {
+	height: 100%;
+}
+
+	.articleBody h1 {
+		padding: 20px 0 18px 20px;
+		border-bottom-width: 3px;
+		border-bottom-style: solid;
+		border-radius: 5px 5px 0 0;
+		font-size: 2.0em;
+		line-height: 1.3;
+	}
+	
+	.articleBody h2 {
+		margin: 1em 0 0.75em;
+		padding: 10px 20px;
+		background: #deebf3;
+		border-radius: 5px;
+		font-size: 2em;
+		line-height: 1.2;
+		overflow: hidden;	
+	}
+	
+	.articleBody h2 span {
+		font-size: 0.7em;
+	}
+	
+	.articleBody h3 {
+		margin: 1em 0 0.75em;
+		padding-left: 20px;
+		background: url(../tmpl-img/ico_heading01.png) no-repeat left center;
+		font-size: 1.8em;
+		font-weight: bold;
+		line-height: 1.2;
+	}
+	
+	.articleBody h4 {
+		margin: 1em 0 0.75em;
+		padding: 8px 0;
+		border-bottom: 1px dotted #ddd;
+		font-size: 1.6em;
+		font-weight: bold;
+	}
+	
+	.articleBody h5 {
+		margin: 1em 0 0.75em;
+		font-size: 1.6em;
+		font-weight: bold;
+	}
+	
+	.articleBody p,
+	.articleBody ul,
+	.articleBody ol,
+	.articleBody dl {
+		margin: 0.75em 0;
+		font-size: 1.4em;
+		line-height: 1.7;
+	}
+	
+	.articleBody ul {
+		margin-left: 20px;
+		list-style: outside disc;
+	}
+	
+	.articleBody ol {
+		margin-left: 20px;
+		list-style: outside decimal;
+	}
+	
+	.articleBody li {
+		margin: 0.3em 0;
+	}
+	
+	.articleBody li ul,
+	.articleBody li ol {
+		margin: 0;
+		margin-left: 20px;
+	}
+	
+	.articleBody dt {
+		margin: 1em 0 0.5em;
+		font-weight: bold;
+	}
+	
+	.articleBody dd {
+		margin: 0.5em 0;
+	}
+	
+	.articleBody strong {
+		font-weight: bold;
+	}
+	
+	.articleBody table {
+		width: 100%;
+		margin: 1em 0 1.5em;
+		font-size: 1.4em;
+		line-height: 1.5;
+	}
+	
+	.articleBody table caption {
+		margin-bottom: 15px;
+		text-align: left;
+	}
+	
+	.articleBody table th,
+	.articleBody table td {
+		padding: 1em 10px;
+		border: 1px solid #ddd;
+	}	
+	
+	.articleBody table th {
+		width: 25%;
+		background-color: #eee;
+		vertical-align: middle;
+		font-weight: normal;
+		white-space: nowrap;
+		
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	.articleBody table thead th {
+		background-color: #f5f5f5;
+	}
+	
+	.articleBody table td a {
+		font-weight: bold;
+	}
+	
+	.articleBody table p,
+	.articleBody table ul,
+	.articleBody table ol,
+	.articleBody table dl,
+	.articleBody table table {
+		font-size: 1em;
+	}
+	
+	.articleBody ul p,
+	.articleBody ol p,
+	.articleBody dl p,
+	.articleBody ul ul,
+	.articleBody ol ul,
+	.articleBody dl ul,
+	.articleBody ul ol,
+	.articleBody ol ol,
+	.articleBody dl ol,
+	.articleBody ul dl,
+	.articleBody ol dl,
+	.articleBody dl dl
+	.articleBody ul table,
+	.articleBody ol table,
+	.articleBody dl table {
+		font-size: 1em;
+	}
+	
+	.articleBody em {
+		font-weight: bold;
+		font-style: normal;
+	}
+	
+	.articleBody a {
+		color: #14b4d2;
+		text-decoration: underline;		
+	}
+	
+	.articleBody a:hover {
+		color: #ffc236;
+		text-decoration: underline;
+	}
+	
+	.articleBody section {
+		margin-bottom: 30px;
+	}
+	
+	.articleBody iframe {
+		width: 100%;
+		height: 1850px;
+	}
+
+/* .col02 -　2カラム
+-------------------------------------------------- */
+.col02 {
+	margin: 10px -1%;
+}
+
+.col02 .col {
+	float: left;
+	width: 48%;
+	margin: 5px 1%;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* .col03 -　3カラム
+-------------------------------------------------- */
+.col03 {
+	margin: 10px -1%;
+}
+
+.col03 .col {
+	float: left;
+	width: 31.333333333%;
+	margin: 5px 1%;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* .col04 -　4カラム
+-------------------------------------------------- */
+.col04 {
+	margin: 10px -1% !important;
+}
+
+.col04 .col {
+	float: left;
+	width: 23%;
+	margin: 5px 1%;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* .topicPath01 - パンくずリスト
+-------------------------------------------------- */
+.topicPath01 {
+	margin: 6px 0 14px;
+}
+
+.topicPath01:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.topicPath01 ol {
+	list-style: none;
+	margin-left: 5px;
+	font-size: 1.3em;
+}
+
+.topicPath01 li {
+	display: inline;
+	margin-right: 5px;
+}
+
+.topicPath01 a {
+	padding-right: 16px;
+	background: url(../tmpl-img/ico_topicpath01.png) no-repeat right center;
+}
+
+.topicPath01 .home {
+	padding-left: 16px;
+	background: url(../tmpl-img/ico_home01.png) no-repeat left center;
+}
+
+/* .externalLink01 - 外部リンクアイコン表示
+-------------------------------------------------- */
+.externalLink01 {
+}
+
+.externalLink01:after {
+	content:url(../tmpl-img/ico_externallink01.png);
+	padding-left: 5px;
+}
+
+/* .pagetop - ページトップ
+-------------------------------------------------- */
+.pagetop {
+	margin: 1em 0 0 !important;
+	text-align: right;
+}
+
+.pagetop span {
+	display: inline-block;
+	padding-left: 14px;
+	background: url(../tmpl-img/btn_pagetop02.png) no-repeat left center;
+}
+
+
+/* .btn01 - 見出しスタイルボタン01
+-------------------------------------------------- */
+.btn01 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.btn01 a {
+	display: table;
+	width: 100%;	
+	padding: 8px 10px;
+	background-color: #14b4d2;
+	border-radius: 5px;	
+	color: #fff;
+	text-decoration: none;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.btn01 a span {
+	display: table-cell;
+	padding-left: 16px;
+	background: url(../tmpl-img/ico_arrow07.png) no-repeat left center;
+	vertical-align: middle;
+}
+
+/* .btnHeading01 - 見出しスタイルボタン01
+-------------------------------------------------- */
+.btnHeading01 a {
+	display: block;
+	padding: 8px 15px;
+	background: #14b4d2 url(../tmpl-img/ico_arrow08.png) no-repeat right 10px center;	
+}
+
+.btnHeading01 a span {
+	display: inline-block;
+	padding-left: 8px;
+	border-left: 4px solid #fff;
+	background: none !important;
+}
+
+/* .pageNavi01 - ページナビ01
+-------------------------------------------------- */
+.pageNavi01 {
+	margin-bottom: 20px !important;
+	list-style: none !important;
+	line-height: 1.3 !important;
+}
+
+.pageNavi01 .btn01 {
+	font-size: 1em !important;
+}
+
+/* .source - 出典
+-------------------------------------------------- */
+.source {
+	margin: -0.5em 0 1.25em !important;
+}
+
+.source a {
+	display: inline-block;
+	font-size: 0.85714285714em;
+	border-bottom: 1px dotted #ddd;
+	text-decoration: none;
+}
+
+
+/* --------------------------------------------------
+	02 - トップページ
+-------------------------------------------------- */
+section.index {
+	margin-bottom: 26px;
+}
+
+/*	.title01 - 見出しスタイル01（トップページのみ）
+-------------------------------------------------- */
+.title01 {
+	margin-bottom: 20px;
+	padding: 12px 24px;	
+	background-color: #ffc236;
+	border-radius: 5px;
+	font-size: 20px;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.title01 span {
+	padding-left: 12px;
+	border-left: 4px solid #eb0044;
+}
+
+/*	.btn01 - ボタンスタイル01（トップページのみ）
+-------------------------------------------------- */
+.btn01.index {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 5px 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.btn01.index span {
+	display: inline-block;
+	padding-left: 14px;
+	background: url(../tmpl-img/ico_arrow06.png) no-repeat left center;
+	color: #333;
+}
+
+/*	.btnList01 - リスト形式のボタンスタイル（トップページのみ）
+-------------------------------------------------- */
+.btnList01.index li:hover {
+	opacity: 0.6;
+}
+
+.btnList01.index li a {
+	display: block;
+	padding: 0 0 20px;	
+	color: #333;
+	text-decoration: none;
+}
+
+.btnList01.index li .thumb {
+	display: block;
+	margin: -11px 0 12px;
+}
+
+.btnList01.index li .title {
+	display: block;
+	font-size: 2.4em;
+	font-weight: bold;	
+}
+
+.btnList01.index li .excerpt {
+	display: block;
+	margin-top: 5px;
+	font-size: 1.4em;
+	font-weight: bold;		
+}
+
+/*	.btnList02 - リスト形式のボタンスタイル（各市町村の災害情報）
+-------------------------------------------------- */
+.btnList02 {
+	margin: 5px -1% !important;
+}
+
+.btnList02 li {
+	list-style: none !important;
+	background: #f5f5f5;
+}
+
+.btnList02 li a {
+	display: block;
+	padding: 5px 0;
+	border: 1px solid #eee;
+	text-decoration: none !important;
+}
+
+.btnList02 li a span {
+	padding-left: 24px;
+	background: url(../tmpl-img/ico_arrow04.png) no-repeat 10px center;
+}
+
+/*	災害に関する情報を調べよう
+-------------------------------------------------- */
+.disaster {
+}
+
+.disaster ul {
+	margin-right: -10px;
+	background-color: #fff;	
+}
+
+.disaster li {
+	float: left;
+	width: 255px;
+	margin-right: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 3px #ccc;
+	text-align: center;
+}
+
+.disaster .disaster02 .btn {
+	margin-top: 29px;
+}
+
+.disaster .disaster01 {
+	background-color: #51c8fa;
+}
+
+.disaster .disaster02 {
+	background-color: #c3e150;
+}
+
+/*	市町村の災害情報を見てみよう
+-------------------------------------------------- */
+.hazardMap li {
+	height: 120px;
+	background: #ffa5ac url(../tmpl-img/bg_hazard_map01.png) no-repeat left top;
+	box-shadow: 0px 3px #ccc;
+	border-radius: 10px;
+	text-align: center;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.hazardMap li a {
+	padding-top: 22px !important;
+}
+
+/*	警報・注意報を調べてみよう
+-------------------------------------------------- */
+.warnInfo {
+}
+
+.warnInfo li {
+	box-shadow: 0px 3px #ccc;
+	height: 60px;
+	border-radius: 10px;
+	text-align: center;
+	background: #ffdab9;
+}
+
+.warnInfo li a {
+	padding-top: 5px !important;
+}
+
+.warnInfo .excerpt:after {
+	content:url(../tmpl-img/ico_externallink02.png);
+	padding-left: 3px;
+}
+
+
+/*	防災マップを作ろう・使おう
+-------------------------------------------------- */
+.makeMap li {
+	height: 120px;
+	background: url(../tmpl-img/bg_make_map01.png) no-repeat left top;
+	box-shadow: 0px 3px #ccc;
+	border-radius: 10px;
+	border: solid #14B4D2;
+	text-align: center;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.makeMap li a {
+	padding-top: 22px !important;
+}
+
+
+/*	防災情報・防災4コマ漫画の配信
+-------------------------------------------------- */
+.akariMap {
+}
+
+.akariMap .content {
+	padding: 1px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.akariMap .content h3  {
+    margin: 5px;
+	padding: 5px;
+	font-size: 1.5em;
+	font-weight: bold;
+    background-color: #ffdab9;
+	border-bottom: 2px solid #ccc;
+}
+
+.akariMap ul {
+	margin-right: -10px;
+	background-color: #fff;
+}
+
+.akariMap li {
+	float: left;
+	width: 250px;
+	margin: 5px;
+}
+
+.akariMap li p {
+	float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+	margin: 10px 5px;
+}
+
+
+
+.akariMap li p span {
+	padding-left: 16px;
+	background: url(../tmpl-img/ico_arrow08.png) no-repeat left center;
+}
+
+/*	サイトマップ
+-------------------------------------------------- */
+.siteMapList01 h2 {
+	padding: 4px 0 4px 4px;
+	background: none;
+	border-bottom: 1px dotted #ddd;
+	border-radius: none;
+	font-size: 0.92857142857em;
+}
+
+.siteMapList01 li ul {
+	list-style: outside circle;
+}
+
+/*	災害情報高度利用システム リンクバナー
+-------------------------------------------------- */
+.indexBannerArea {
+}
+
+
+/* --------------------------------------------------
+	03 - 詳細ページ
+-------------------------------------------------- */
+.articleBody .disaster01 {
+	padding: 1px 10px 1px 24px;
+	background: url(../tmpl-img/ico_hazard_map_disaster01.png) no-repeat left center;
+}
+
+.articleBody .disaster02 {
+	padding: 1px 10px 1px 24px;
+	background: url(../tmpl-img/ico_hazard_map_disaster02.png) no-repeat left center;
+}
+
+
+/*	図表
+-------------------------------------------------- */
+.figTable01 {
+	background-color: #fff;
+}
+
+.figTable01 .level03 {
+	background-color: #f5ebff !important;
+}
+
+.figTable01 .level02 {
+	background-color: #ffe0e0 !important;
+}
+
+.figTable01 .level01 {
+	background-color: #ffffe1 !important;
+}
+
+.figTable01 th {
+	width: auto !important;
+	font-weight: bold !important;
+	text-align: center;
+}
+
+.figTable01 th span {
+	font-weight: normal !important;
+}
+
+.figTable01 tbody th {
+	background: none !important;
+}
+
+.figTable01 td {
+	vertical-align: middle;
+}
+
+.figTable01 ul {
+	margin-left: 15px;
+}
+
+.figTable01 li span {
+	font-size: 11px !important;
+}
+
+
+/*	気象警報・注意報の種類
+-------------------------------------------------- */
+#shurui,
+#tsunami {
+	font-size: 1.2em !important;
+}
+
+#shurui th {
+	white-space: normal !important;
+}
+
+#shurui th,
+#shurui td,
+#tsunami th,
+#tsunami td {
+	padding: 5px !important;
+}
+
+/*	土砂災害警戒情報 */
+#shurui .keikai {
+  width: 20px;
+  padding: 0 !important;
+  background-color: #ffe0e0;
+  vertical-align: top;
+}
+
+#shurui .keikai span {
+  display: block;
+  height: 315px;
+  padding-top: 96px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
